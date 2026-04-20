@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--font awesome cdn link -->
+    <link  rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- custom css file link --> 
+        <link rel="stylesheet" href="style.css">
+
+</head>
+
+<div id="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center;">
+    <div style="background:#fff; border-radius:1rem; padding:3rem; width:90%; max-width:40rem; position:relative;">
+        
+        <button onclick="document.getElementById('modal').style.display='none'" style="position:absolute; top:1rem; right:1.5rem; font-size:2rem; background:none; border:none; cursor:pointer; color:#666;">✕</button>
+        
+        <h2 style="font-size:2.5rem; color:#333; margin-bottom:2rem;">Haqqımızda</h2>
+        
+        <p style="font-size:1.6rem; color:#666; margin-bottom:1rem;">🕐 09:00 - 18:00</p>
+        <p style="font-size:1.6rem; color:#666; margin-bottom:1rem;">📍 Port Baku Towers</p>
+        <p style="font-size:1.6rem; color:#666; margin-bottom:1rem;">📞 (+994 12) 437 93 93</p>
+        <p style="font-size:1.6rem; color:#666; margin-bottom:1rem;">📸 <a href="https://instagram.com/freshcatering" target="_blank" style="color:#666;">@freshcatering</a></p>
+        
+    </div>
+</div>
+
+<body>
+    <header>
+        <a href ="#" class="logo"><i class="fa fa-coffee" aria-hidden="true"></i>Coffee</a>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+         
+        <nav class="navbar">
+            <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#menu">menu +</a>
+                <ul>
+                    <li><a href="#classic">Classic Drinks</a></li>
+                    <li><a href="#ice">Ice Drinks</a></li>
+                    <li><a href="#special">Special Drinks</a></li>
+                    <li><a href="#alternative">Alternative Brewing</a></li>
+                    <li><a href="#elaveler">Elaveler</a></li>
+                </ul>
+            </li>           
+            <li><a href="#dessert">desserts</a></li>
+            <li><a href="#sendvic">Qəlyanaltılar +</a>
+    <ul>
+        <li><a href="#sendvic">Sendviçlər</a></li>
+        <li><a href="#salat">Salatlar</a></li>
+        <li><a href="#yemek">Yeməklər</a></li>
+    </ul>
+</li>
+            <li><a href="#teklifleriniz">teklifleriniz</a></li>
+        </ul>
+        </nav>
+    </header>
+    <!-- header section end-->
+
+<!--Home section start-->
+<section class="home" id="home">
+    <div class="content">
+        <h3>Coffee made with love</h3>
+         <p>
+    Fresh Catering MMC 2010-cu ildən fəaliyyət göstərir və Azərbaycanda keyfiyyətli və münasib qiymətli katerinq xidmətləri təqdim edir. 
+    Şirkət sağlam, təzə və dadlı yeməklərlə müştəri məmnuniyyətini və iş mühitində rahatlığı artırmağı hədəfləyir. 
+    ISO 9001:2008 və ISO 22000:2005 sertifikatlarına malikdir.
+  </p>
+        <a href="#" class="btn" onclick="document.getElementById('modal').style.display='flex'; return false;">Details</a>
+    </div>
+    <div class="image"><img src="img/Untitled.jpeg" alt=""></div>
+</section>
+<!--Home section end-->
+<!-- axsam endirimleri section -->
+<section class="menu" id="teklifleriniz" style="display:none;">
+    <h1 class="heading">Axşam <span>Xüsusiyyətləri</span></h1>
+    <p class="aksam-alt">🌙 Saat 17:00-dan sonra aktifdir</p>
+    
+    <div class="aksam-grid">
+        
+        <div class="aksam-kart">
+            <h3 class="aksam-baslik">🥗 Yemək + Salatlar</h3>
+            <p class="aksam-metn">Bütün yemək və salatlara <span class="endirim">50% endirim</span> — hər gün saat 17:00-dan sonra</p>
+        </div>
+
+        <div class="aksam-kart">
+            <h3 class="aksam-baslik">🍰 Desertlər</h3>
+            <p class="aksam-metn">Çərşənbə və Cümə günləri saat 17:00-dan sonra <span class="endirim">50% endirim</span></p>
+        </div>
+
+        <div class="aksam-kart">
+            <h3 class="aksam-baslik">☕ Combo Təkliflər</h3>
+            <p class="aksam-metn">Americano + Cookie → <span class="endirim">5.5 AZN</span> <s class="kecmis">6 AZN</s></p>
+            <p class="aksam-metn">Latte + Brownie → <span class="endirim">9 AZN</span> <s class="kecmis">10 AZN</s></p>
+            <p class="aksam-metn">Cappuccino + San Sebastian → <span class="endirim">10 AZN</span> <s class="kecmis">11 AZN</s></p>
+        </div>
+
+    </div>
+</section>
+<!-- axsam endirimleri end -->
+<!-- salatlar -->
+<section class="menu" id="salat">
+    <h1 class="heading">Sala<span>tlar</span></h1>
+    <div class="box-container2">
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/et salat.png" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">7 ₼</span>
+            </div>
+            <h3>Et Salatı</h3>
+            <p class="description">Ət salatı, qaynadılmış ət və tərəvəzlərlə. 360 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/et terevez.png" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">8 ₼</span>
+            </div>
+            <h3>Tərəvəz ilə Et Salatı</h3>
+            <p class="description">Tərəvəz ilə ət salatı, təzə tərəvəz və ət ilə. 340 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/sezar.png" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">6 ₼</span>
+            </div>
+            <h3>Sezar Salatı</h3>
+            <p class="description">Sezar salatı, romaine salat, parmezan, kruton və sezar sousu ilə. 280 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/solmon salat.png" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">8 ₼</span>
+            </div>
+            <h3>Somon Salatı</h3>
+            <p class="description">Somon salatı, qızardılmış somon və göyərti ilə. 360 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/tuna.png" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">8 ₼</span>
+            </div>
+            <h3>Tuna Salatı</h3>
+            <p class="description">Tuna salatı, ton balığı və tərəvəzlərlə. 300 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/artisok.png" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">6 ₼</span>
+            </div>
+            <h3>Artişok Salatı</h3>
+            <p class="description">Artişok salatı, yüngül sous və tərəvəzlərlə. 240 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/artisok.png" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">6 ₼</span>
+            </div>
+            <h3>Toyuq ilə Balqabaq Salatı</h3>
+            <p class="description">Toyuq ilə balqabaq salatı, qızardılmış toyuq və balqabaq ilə. 320 kkal</p>
+        </div>
+
+    </div>
+</section>
+<!-- salatlar end -->
+ <!-- yemekler -->
+<section class="menu" id="yemek">
+    <h1 class="heading">Yemək<span>lər</span></h1>
+    <div class="box-container2">
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/solmon.png" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">12 ₼</span>
+            </div>
+            <h3>Somon Balığı</h3>
+            <p class="description">Somon balığı, limon sousu və qarnir ilə. 450 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/gordon.png" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">9 ₼</span>
+            </div>
+            <h3>Cordon Bleu</h3>
+            <p class="description">Cordon blue, toyuq filesi, pendir və suxarı ilə. 520 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/bolanez.jpg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">9 ₼</span>
+            </div>
+            <h3>Bolonaze</h3>
+            <p class="description">Boloneze, qiymə və pomidor sousu ilə makaron. 480 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/beef str.png" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">9 ₼</span>
+            </div>
+            <h3>Beef Stroganoff</h3>
+            <p class="description">Beef stroganoff, qaymaqlı sousda dana əti ilə. 530 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/qrecka.jpeg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">9 ₼</span>
+            </div>
+            <h3>Et Qulyajı</h3>
+            <p class="description">Ət qulyaj, tərəvəz və sous ilə bişmiş ət. 500 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/Beef-Fajitas.jpg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">9 ₼</span>
+            </div>
+            <h3>Et Fajitas</h3>
+            <p class="description">Ət fajitas, tərəvəzlə qızardılmış ət və sous. 470 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/funcoza.jpeg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">8 ₼</span>
+            </div>
+            <h3>Funchoza</h3>
+            <p class="description">Funçoza, tərəvəz və sous ilə şüşə əriştə. 390 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/cop sis.png" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">8 ₼</span>
+            </div>
+            <h3>Çop Şiş</h3>
+            <p class="description">Çöp şiş, manqalda bişmiş ət parçaları. 420 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/et lule.png" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">9 ₼</span>
+            </div>
+            <h3>Et Lülə</h3>
+            <p class="description">Ət lülə, şişdə çəkilmiş ət kababı. 430 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/toyuq lule.jpeg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">7.5 ₼</span>
+            </div>
+            <h3>Toyuq Lüləsi</h3>
+            <p class="description">Toyuq lülə, şişdə çəkilmiş toyuq kababı. 380 kkal</p>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/kotlet.png" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">7 ₼</span>
+            </div>
+            <h3>Toyuq Kotlet Pürə ilə</h3>
+            <p class="description">Toyuq kotlet, kartof püresi ilə. 410 kkal</p>
+        </div>
+
+    </div>
+</section>
+<!-- yemekler end -->
+ <!-- qelyanaltilar - sendvic -->
+<section class="menu" id="sendvic">
+    <h1 class="heading">Sendviç<span>lər</span></h1>
+    <div class="box-container2">
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/ciabata.jpg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">5 ₼</span>
+            </div>
+            <h3>Ciabatta Sandviç</h3>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/tortilla.jpg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">5 ₼</span>
+            </div>
+            <h3>Tendir Sandviç</h3>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/roll.jpg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">5 ₼</span>
+            </div>
+            <h3>Chicken Roll</h3>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/salami.jpg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">5 ₼</span>
+            </div>
+            <h3>Salyami Sandviç</h3>
+        </div>
+
+        <div class="box2">
+            <div class="slider">
+                <img src="img/vecina.jpg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">5 ₼</span>
+            </div>
+            <h3>Vecina Sandviç</h3>
+        </div>
+
+    </div>
+</section>
+<!-- sendvic end -->
+<!--menu section baslayis-->
+<section class ="menu" id="dessert">
+    <h1 class="heading">our<span> Desserts </span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img class="image" src="img/brownie.jpg" alt="">
+            <div class="content">
+                <img src="img/browicon.jpeg" alt="">
+                <h3>Brownie</h3>
+                <span class="price">  4₼ </span>
+                <p>İntensiv şokolad dadı və nəm teksturası ilə fərqlənən bu desert, şokolad sevərlərin bir nömrəli seçimidir. İsti və ya soyuq halda servis edilən bu ləzzət, hər dişləmdə zəngin dad bəxş edir. Orta ölçülü bir brauni dilimi təxminən 350 kalori təşkil edir.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="img/blinniy.jpeg" alt="">
+            <div class="content">
+                <img src="img/BLINICON.png" alt="">
+                <h3>Blinniy </h3>
+                <span class="price">  4₼ </span>
+                <p>İncə krep qatları və ləzzətli qaymaqlı kremdən hazırlanan bu tort, üzərindəki şokolad qlazuru ilə mükəmməl bir dad yaradır. Təzə çiyələklə bəzədilmiş bu zərif şirniyyat həm görünüşü, həm də doyumluluğu ilə seçilir. Bu dadlı təamın bir dilimi təxminən 450 kalori təşkil edir.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="img/honey cake.jpeg" alt="">
+            <div class="content">
+                <img src="img/honeyicon.jpeg" alt="">
+                <h3>Honey Cake</h3>
+                <span class="price">  5₼ </span>
+                <p>İncə ballı qatların yumşaq xama kremi ilə birləşməsindən yaranan, ağızda əriyən klassik bir təamdır. Balın təbii ətri və zərif dadı ilə hər kəsin sevimlisinə çevrilən bu tort olduqca doyumlu bir seçimdir. Bu ləzzətli şirniyyatın bir dilimi təxminən 420 kalori təşkil edir.</p>
+            </div>
+        </div>
+        
+      
+    
+</section>
+<!--classic icki-->
+<section class="menu" id="classic">
+    <h1 class="heading">classic<span> Drink </span></h1>
+    <div class="box-container2">
+        <div class="box2">
+            <div class="slider">
+                <img src="img/espresso.jpg" alt="">
+                
+            </div>
+            <div class="price-slider">
+                <span class="price">Small  3₼ </span>
+                
+            </div>
+           
+            <h3>Espresso</h3>
+            <div class="starts">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <!-- <div class="slider-controls">
+                <div class="slider-arrow prev-arrow">&#10094;</div>
+                <div class="slider-arrow next-arrow">&#10095;</div>
+            </div> -->
+        </div>
+        <div class="box2">
+            <div class="slider">
+                <div class="prev-btn"><i class="fas fa-chevron-left"></i></div>
+                 <div class="next-btn"><i class="fas fa-chevron-right"></i></div>
+                <img src="img/americano s.jpeg" alt="">
+                <img src="img/americano m.jpeg" alt="">
+                <img src="img/americano large.jpg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">Small  3₼ </span>
+                <span class="price">Medium 6₼ </span>
+                <span class="price">Large  9₼ </span>
+            </div>
+            
+            <h3>Americano</h3>
+            <div class="starts">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+          
+        </div>
+        <div class="box2">
+            <div class="slider">
+                <div class="prev-btn"><i class="fas fa-chevron-left"></i></div>
+                 <div class="next-btn"><i class="fas fa-chevron-right"></i></div>
+                <img src="img/raf s.jpg" alt="">
+                <img src="img/raf m.jpeg" alt="">
+                <img src="img/rafcoffe large.jpg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">Small  3₼ </span>
+                <span class="price">Medium 6₼ </span>
+                <span class="price">Large  9₼ </span>
+            </div>
+            <h3>Coffee Raff</h3>
+            <div class="starts">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+           
+        </div>
+    </div>
+</section>
+<!--classic end-->
+<!--hot icki-->
+<section class="menu" id="special">
+    <h1 class="heading">special<span> Drink </span></h1>
+    <div class="box-container2">
+        <div class="box2">
+            <div class="slider">
+                <img src="img/coffee1.jpg" alt="">
+                
+            </div>
+            <div class="price-slider">
+                <span class="price">Small  3₼ </span>
+                
+            </div>
+            <h3>Espresso</h3>
+            <div class="starts">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <!-- <div class="slider-controls">
+                <div class="slider-arrow prev-arrow">&#10094;</div>
+                <div class="slider-arrow next-arrow">&#10095;</div>
+            </div> -->
+        </div>
+        <div class="box2">
+            <div class="slider">
+                <div class="prev-btn"><i class="fas fa-chevron-left"></i></div>
+                 <div class="next-btn"><i class="fas fa-chevron-right"></i></div>
+                <img src="img/americano large.jpg" alt="">
+                <img src="img/americano m.jpeg" alt="">
+                <img src="img/coffee7.jpg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">Small  3₼ </span>
+                <span class="price">Medium 6₼ </span>
+                <span class="price">Large  9₼ </span>
+            </div>
+            <h3>Americano</h3>
+            <div class="starts">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+          
+        </div>
+        <div class="box2">
+            <div class="slider">
+                <div class="prev-btn"><i class="fas fa-chevron-left"></i></div>
+                 <div class="next-btn"><i class="fas fa-chevron-right"></i></div>
+                <img src="img/raf m.jpeg" alt="">
+                <img src="img/coffee3.jpg" alt="">
+                <img src="img/coffee4.jpg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">Small  3₼ </span>
+                <span class="price">Medium 6₼ </span>
+                <span class="price">Large  9₼ </span>
+            </div>
+            <h3>Coffee Raff</h3>
+            <div class="starts">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+           
+        </div>
+            <div class="box2">
+                <div class="slider">
+                    <div class="prev-btn"><i class="fas fa-chevron-left"></i></div>
+                 <div class="next-btn"><i class="fas fa-chevron-right"></i></div>
+                    <img src="img/hot s.jpeg" alt="">
+                    <img src="img/hot m.jpg" alt="">
+                    <img src="img/coffee7.jpg" alt="">
+                </div>
+                <div class="price-slider">
+                    <span class="price">Small  3₼ </span>
+                    <span class="price">Medium 6₼ </span>
+                    <span class="price">Large  9₼ </span>
+                </div>
+                <h3>Hot Chocolate</h3>
+                <div class="starts">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+        </div>
+        
+    </div>
+</section>
+<!--hot end-->
+<!--soyuq ickiler-->
+<section class="menu" id="ice">
+    <h1 class="heading">cold<span> Drink </span></h1>
+    <div class="box-container2">
+        <div class="box2">
+            <div class="slider">
+                <div class="prev-btn"><i class="fas fa-chevron-left"></i></div>
+                 <div class="next-btn"><i class="fas fa-chevron-right"></i></div>
+                <img src="img/ice s.jpeg" alt="">
+                <img src="img/ice m.jpg" alt="">
+                <img src="img/coffee7.jpg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">Small  3₼ </span>
+                <span class="price">Medium 6₼ </span>
+                <span class="price">Large  9₼ </span>
+            </div>
+            <h3>Ice Latte</h3>
+            <div class="starts">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            
+        </div>
+        <div class="box2">
+            <div class="slider">
+                <div class="prev-btn"><i class="fas fa-chevron-left"></i></div>
+                 <div class="next-btn"><i class="fas fa-chevron-right"></i></div>
+                <img src="img/americano medium.jpg" alt="">
+                <img src="img/americano small.jpg" alt="">
+                <img src="img/coffee7.jpg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">Small  3₼ </span>
+                <span class="price">Medium 6₼ </span>
+                <span class="price">Large  9₼ </span>
+            </div>
+            <h3>Ice Americano</h3>
+            <div class="starts">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            
+        </div>
+        <div class="box2">
+            <div class="slider">
+                <div class="prev-btn"><i class="fas fa-chevron-left"></i></div>
+                 <div class="next-btn"><i class="fas fa-chevron-right"></i></div>
+                <img src="img/coffee4.jpg" alt="">
+                <img src="img/coffee6.jpg" alt="">
+                <img src="img/coffee7.jpg" alt="">
+            </div>
+            <div class="price-slider">
+                <span class="price">Small  3₼ </span>
+                <span class="price">Medium 6₼ </span>
+                <span class="price">Large  9₼ </span>
+            </div>
+            <h3>Ice Raff</h3>
+            <div class="starts">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
+<!--soyuq icki end-->
+ 
+
+
+
+
+
+
+
+
+
+<!-- map-->
+ <div style="padding: 0 9%;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.4972592856593!2d49.861805399999994!3d40.3756705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d01a8e13b05%3A0x4190ace997ade44b!2sPort%20Baku%20Towers%2C%20153%20Neftciler%20ave%2C%20Baku%201010!5e0!3m2!1sen!2saz!4v1776630262474!5m2!1sen!2saz" width="100%" height="350" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<!--map end-->
+<!-- footer -->
+<footer style="background:#fff; padding:2rem 9%; text-align:center; border-top:0.1rem solid rgba(0,0,0,0.1); margin-top:2rem;">
+    <p style="font-size:1.4rem; color:#888; margin-bottom:.5rem;">© 2026 Fresh Catering MMC. Bütün hüquqlar qorunur.</p>
+    <p style="font-size:1.2rem; color:#bbb;">Designed by Nijat Asgarov</p>
+</footer>
+<!-- footer end -->
+<!--menu section bitis-->
+
+
+    <!--custom js file link-->
+    
+    <script src="script.js"></script>
+</body>
+</html>
